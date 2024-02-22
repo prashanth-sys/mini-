@@ -3,22 +3,6 @@ import {Component} from 'react'
 import './index.css'
 
 class MemoryMatrix extends Component {
-  componentDidMount() {
-    this.generateButton()
-  }
-
-  generateButton = () => {
-    const buttonId = Array.from({length: 9}, index => index + 1)
-    const shuffledButtonId = this.shuffleArray(buttonId)
-    console.log(buttonId)
-    const selectedButtons = shuffledButtonId.slice(0, 3)
-    console.log(selectedButtons)
-  }
-
-  shuffleArray = array => {
-    console.log(array)
-  }
-
   render() {
     return (
       <div className="memory-matrix-container">
